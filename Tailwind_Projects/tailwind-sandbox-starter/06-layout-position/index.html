@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body>
+    <!-- Positioning -->
+    <div class="relative w-40 h-40 bg-orange-400 font-medium">
+      I am relative
+      <div class="absolute bottom-0 right-0 w-30 h-10 bg-blue-400">
+        I am absolute
+      </div>
+    </div>
+
+    <!-- Top left corner -->
+    <div class="relative my-4 h-40 w-40 bg-orange-400">
+      <div class="absolute top-0 left-0 h-10 w-20 bg-blue-300"></div>
+    </div>
+    <!-- Top right corner -->
+    <div class="relative h-40 w-40 bg-orange-400">
+      <!-- I am relative -->
+      <div class="absolute top-0 right-0 h-10 w-30 bg-blue-300">
+        I am absolute
+      </div>
+    </div>
+
+    <!-- Bottom left corner -->
+    <div class="relative h-40 w-40 bg-orange-400 my-4">
+      <div class="absolute bottom-0 left-0 bg-blue-400 h-10 w-20"></div>
+    </div>
+
+    <!-- Bottom right corner -->
+    <div class="relative h-40 w-40 bg-orange-400 my-4">
+      <div class="absolute h-10 w-20 bg-blue-400 bottom-0 right-0"></div>
+    </div>
+
+    <!-- Span top edge -->
+    <div class="relative h-40 w-40 bg-orange-400">
+      <div class="absolute top-0 inset-x-0 h-10 bg-blue-100">Span top edge</div>
+    </div>
+
+    <!-- Span left edge -->
+    <div class="relative h-40 w-40 bg-orange-400 my-4">
+      <div class="absolute left-0 inset-y-0 w-10 bg-blue-100"></div>
+    </div>
+
+    <!-- Span right edge -->
+    <div class="relative w-40 h-40 bg-orange-400 my-4">
+      <div class="absolute inset-y-0 right-0 w-10 bg-blue-100"></div>
+    </div>
+
+    <!-- Span bottom edge -->
+    <div class="relative w-40 h-40 bg-orange-400 my-4">
+      <div class="absolute inset-x-0 bottom-0 h-10 bg-blue-100"></div>
+    </div>
+
+    <!-- Display Classes -->
+    <div class="">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quod.
+      Quisquam, eveniet?
+      <span class="inline font-bold">I am inline</span> Quaerat molestiae
+      tempora doloribus debitis quod nulla necessitatibus aliquam asperiores
+      dolorem corrupti ducimus<span class="inline-block font-bold"
+        >I am inline block</span
+      >
+      nihil veniam perspiciatis, enim quidem dolores cum accusantium libero
+      architecto. Ullam co<span class="block font-bold">I am block </span>mmodi
+      repellat debitis omnis.
+      <span class="hidden">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, nam?
+      </span>
+    </div>
+
+    <!-- Z-Index -->
+    <div class="relative flex justify-center my-6">
+      <div class="absolute h-10 w-20 bg-blue-100 left-10">1</div>
+      <div class="absolute h-10 w-20 bg-blue-200 left-20">2</div>
+      <div class="absolute h-10 w-20 bg-blue-300 left-30 z-10">3</div>
+      <div class="absolute h-10 w-20 bg-blue-400 left-40">4</div>
+      <div class="absolute h-10 w-20 bg-blue-500 left-50">5</div>
+      <div class="absolute h-10 w-20 bg-blue-600 left-60 z-30">6</div>
+    </div>
+
+    <!-- Floats -->
+    <div class="relative w-2/2 h-50 mt-10">
+      <div class="float-left w-1/2 h-20 bg-blue-100">I am float left</div>
+      <div class="float-right w-1/2 h-20 bg-blue-200">I am float right</div>
+    </div>
+  </body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
