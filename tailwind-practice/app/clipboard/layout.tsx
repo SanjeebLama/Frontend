@@ -1,3 +1,8 @@
+export const metadata = {
+	title: 'Clipboard ',
+	description: 'TailwindCSS Project',
+};
+
 export default function ClipBaordLayout({
 	children, // will be a page or nested layout
 }: {
