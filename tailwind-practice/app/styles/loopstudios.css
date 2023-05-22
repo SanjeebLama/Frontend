@@ -1,0 +1,12 @@
+#hero {
+	background-image: url('/assets/loopstudios/desktop/image-hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 576px) {
+	#hero {
+		background-image: url('/assets/loopstudios/mobile/image-hero.jpg');
+		background-size: center;
+	}
+}

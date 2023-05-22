@@ -1,3 +1,5 @@
+import '../styles/loopstudios.css';
+
 export const metadata = {
 	title: 'LoopStudios ',
 	description: 'TailwindCSS Project',
