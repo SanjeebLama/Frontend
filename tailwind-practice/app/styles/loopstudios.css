@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.see-all-btn {
+		@apply my-0 px-10 py-2 border-2 border-black font-bold uppercase tracking-[.3em]  hover:text-white hover:bg-black;
+	}
+}
+
 #hero {
 	background-image: url('/assets/loopstudios/desktop/image-hero.jpg');
 	background-repeat: no-repeat;
