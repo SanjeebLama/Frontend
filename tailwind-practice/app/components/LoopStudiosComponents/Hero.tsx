@@ -1,4 +1,7 @@
+'use client';
+
 import { Alata } from 'next/font/google';
+import { useState } from 'react';
 
 const alata = Alata({
 	subsets: ['latin'],
@@ -29,6 +32,11 @@ const menuItems = [
 ];
 
 const Hero = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const navToggle = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
 	return (
 		<section id='hero'>
 			{/* Hero Container  */}
@@ -50,10 +58,40 @@ const Hero = () => {
 						))}
 					</div>
 
-					{/* TODO : Hamburger Button  */}
+					{/* Hamburger Button  */}
+					<div className='md:hidden'>
+						<button
+							className={`${
+								isMenuOpen && 'open'
+							} z-10 block hamburger md:hidden focus:outline-none`}
+							id='menu-btn'
+							type='button'
+							onClick={navToggle}
+						>
+							<span className='hamburger-top'></span>
+							<span className='hamburger-middle'></span>
+							<span className='hamburger-bottom'></span>
+						</button>
+					</div>
 				</nav>
 
-				{/* TODO : Mobile Menu  */}
+				{/* Mobile Menu  */}
+				<div
+					id='menu'
+					className={`absolute top-0 bottom-0 left-0 ${
+						isMenuOpen ? 'flex' : 'hidden'
+					} flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black`}
+				>
+					{menuItems.map((item) => (
+						<a
+							href={item.href}
+							key={item.title}
+							className='hover:text-pink-500'
+						>
+							{item.title}
+						</a>
+					))}
+				</div>
 
 				{/* Text Secion  */}
 				<div className='max-w-lg mt-32 mb-32 p-4 text-4xl uppercase text-white border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl'>
