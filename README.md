@@ -20,6 +20,23 @@ This repository showcases web design and code projects built using TailwindCSS, 
 
 </details>
 
+### Project LoopStudios
+[Frontend Master Challenge](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw)
+
+#### Desktop View
+<details><summary><b>Click here to check preivew</b></summary>
+
+![](Project_Preview/LoopStudiosDesktop.png)
+</details>
+
+
+#### Mobile View
+<details><summary><b>Click here to check preivew</b></summary>
+
+![](Project_Preview/LoopStudiosMobile.png)
+
+</details>
+
 <br>
 
 ## p1 - preview
